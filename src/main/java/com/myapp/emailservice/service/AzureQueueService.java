@@ -24,9 +24,7 @@ public class AzureQueueService {
     public List<String> receiveMessages() {
         List<String> messages = new ArrayList<>();
         for (QueueMessageItem message : queueClient.receiveMessages(5)) {
-            messages.add(message.getMessageText());
-            queueClient.deleteMessage(message.getMessageId(), message.getPopReceipt());
-            System.out.println("Message deleted: " + message.getMessageText());
+            messages.add(message.getBody().toString());
         }
         return messages;
     }
