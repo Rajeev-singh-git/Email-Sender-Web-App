@@ -31,4 +31,12 @@ public class AzureQueueController {
         queueService.deleteAllMessages();
         return "All messages have been deleted.";
     }
+
+
+    /* Comment added
+
+
+
+    .....
+     */
 }
