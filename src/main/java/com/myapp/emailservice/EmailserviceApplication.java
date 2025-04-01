@@ -10,11 +10,4 @@ public class EmailserviceApplication {
 		SpringApplication.run(EmailserviceApplication.class, args);
 	}
 
-	   /* Comment added
-
-
-
-    .....
-     */
-
 }
